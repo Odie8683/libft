@@ -42,5 +42,8 @@ int main(void)
   else
     ft_putstr("La taille de la string n'est pas identique\n");
   free(p3);
+  ft_strncat(buffer, " Wide Web", 6);
+  ft_putstr(buffer);
+  ft_putchar('\n');
   return 0;
 }
