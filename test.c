@@ -1,6 +1,7 @@
 #include "include/libft.h"
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main(void)
 {
@@ -19,7 +20,7 @@ int main(void)
 	ft_strncpy(p, "Jordan Mpounza", 6);
 	ft_putstr(p);
   ft_putchar('\n');
-  ft_memmove(buffer + 1, buffer, 79);
+  ft_memmove(buffer, str2, 8);
   ft_putstr(buffer);
   ft_putchar('\n');
   p2 = (char *)ft_memchr(p, 'r', 6);
@@ -42,8 +43,16 @@ int main(void)
   else
     ft_putstr("La taille de la string n'est pas identique\n");
   free(p3);
-  ft_strncat(buffer, " Wide Web", 6);
+  int cat =  ft_strlcat(buffer, "Wide Web", 10);
   ft_putstr(buffer);
-  ft_putchar('\n');
+  printf("\n%d \n", cat);
+  p3 = ft_strchr("Je suis le rois des renois", 'w');
+  if (p3 != NULL) {
+  	ft_putstr("Le la caratère a était trouver!\nVoici la suite suite du char chercher : ");
+	ft_putstr(p3);
+	putchar('\n');
+  }
+  else
+  	ft_putstr("il n'y a pas le char demander dans la string\n");
   return 0;
 }
