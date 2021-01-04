@@ -46,7 +46,7 @@ int main(void)
   int cat =  ft_strlcat(buffer, "Wide Web", 10);
   ft_putstr(buffer);
   printf("\n%d \n", cat);
-  p3 = ft_strstr("Je suis le rois des renois", "renois");
+  p3 = ft_strnstr("Je suis le rois des renois", "dessa", 3);
   if (p3 != NULL) {
   	ft_putstr("Le la caratère a était trouver!\nVoici la suite suite du char chercher : ");
 	ft_putstr(p3);
