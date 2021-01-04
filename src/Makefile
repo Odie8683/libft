@@ -17,7 +17,9 @@ SRC		=		ft_putchar.c \
 					ft_strcat.c \
 					ft_strncat.c \
 					ft_strlcat.c \
-					ft_strchr.c
+					ft_strchr.c \
+					ft_strrchr.c \
+					ft_strstr.c
 
 OBJ		=		$(SRC:%.c=%.o)
 RM			=		rm -rf
