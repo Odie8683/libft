@@ -30,10 +30,15 @@ int main(void)
   }
   ft_putstr(p2);
   ft_putchar('\n');
-  if (ft_memcmp("Jordan", "Jordan", 6) == 0)
+  int test = ft_memcmp("jordan", "Jordan", 6);
+  if (test == 0){
     ft_putstr("C'est identique\n");
-    else
-      ft_putstr("Ce n'est pas identique\n");
+    printf("%d\n", test);
+  }
+  else
+    ft_putstr("Ce n'est pas identique\n");
+  
+  printf("%d\n", test);
   printf("%ld\n",ft_strlen("jordan"));
   p3 = ft_strdup(str2);
   ft_putstr(p3);
