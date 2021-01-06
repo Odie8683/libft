@@ -37,7 +37,7 @@ int main(void)
   }
   else
     ft_putstr("Ce n'est pas identique\n");
-  
+
   printf("%d\n", test);
   printf("%ld\n",ft_strlen("jordan"));
   p3 = ft_strdup(str2);
@@ -59,6 +59,6 @@ int main(void)
   }
   else
   	ft_putstr("il n'y a pas le char demander dans la string\n");
-  printf("%d\n", ft_atoi("333"));
+  printf("atoi = %d\n", ft_atoi("1002"));
   return 0;
 }
