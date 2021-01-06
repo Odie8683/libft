@@ -30,7 +30,7 @@ int main(void)
   }
   ft_putstr(p2);
   ft_putchar('\n');
-  int test = ft_memcmp("jordan", "Jordan", 6);
+  int test = ft_strncmp("Jordan", "JzrdanPP", 6);
   if (test == 0){
     ft_putstr("C'est identique\n");
     printf("%d\n", test);
@@ -59,5 +59,6 @@ int main(void)
   }
   else
   	ft_putstr("il n'y a pas le char demander dans la string\n");
+  printf("%d\n", ft_atoi("333"));
   return 0;
 }

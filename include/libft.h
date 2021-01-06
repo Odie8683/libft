@@ -24,6 +24,10 @@ char *ft_strchr(const char *, int);
 char *ft_strrchr(char *, int);
 char *ft_strstr(const char *, const char *);
 char *ft_strnstr(const char *, const char *, size_t);
-
+int ft_strcmp(const char *, const char *);
+int ft_strncmp(const char *, const char *, size_t);
+int ft_isdigit(int);
+int ft_isalpha(int);
+int ft_atoi(const char *);
 
 #endif

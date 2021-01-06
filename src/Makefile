@@ -20,7 +20,12 @@ SRC		=		ft_putchar.c \
 					ft_strchr.c \
 					ft_strrchr.c \
 					ft_strstr.c \
-					ft_strnstr.c
+					ft_strnstr.c \
+					ft_strcmp.c \
+					ft_strncmp.c \
+					ft_isdigit.c \
+					ft_isalpha.c \
+					ft_atoi.c
 
 OBJ		=		$(SRC:%.c=%.o)
 RM			=		rm -rf
