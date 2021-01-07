@@ -11,11 +11,10 @@ int ft_atoi(const char *str)
 	nbr = 0;
 	unit = 1;
 	i = 0;
-	while (ft_isdigit(str[i])){
+	while (ft_isdigit(str[i + 1])){
 		unit *= 10;
 		i++;
 	}
-	unit /= 10;
 	i = 0;
 	while (ft_isdigit(str[i])) {
 		nbr = (str[i] - '0') * unit + nbr;
