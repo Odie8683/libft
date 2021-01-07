@@ -8,7 +8,7 @@ int main(void)
   char str[] = "Wesh les cousins";
   char str2[] = "Bonjour tous le monde!";
   int a = 23333333;
-  char p[10];
+  char *p;
   char *p2;
   char *p3;
   char buffer[80] = "World";
@@ -16,8 +16,8 @@ int main(void)
   ft_memset(str, '-', 4);
   ft_putstr(str);
   ft_putchar('\n');
-  ft_bzero(p, 10);
-	ft_strncpy(p, "Jordan Mpounza", 6);
+  p = ft_memalloc(10);
+	ft_strncpy(p, "Jordan Mpounza", 10);
 	ft_putstr(p);
   ft_putchar('\n');
   ft_memmove(buffer, str2, 8);
@@ -59,7 +59,7 @@ int main(void)
   }
   else
   	ft_putstr("il n'y a pas le char demander dans la string\n");
-  printf("atoi = %d\n", ft_atoi("1002"));
+  printf("atoi = %d\n", ft_atoi("100aeraezr2222"));
   printf("isalnum = %d\n", ft_isalnum('v'));
   printf("isascii = %d\n", ft_isascii(128));
   printf("isprint = %d\n", ft_isprint('A'));
@@ -67,6 +67,11 @@ int main(void)
   ft_putchar('\n');
   ft_putchar(ft_tolower('Z'));
   ft_putchar('\n');
-
+  ft_strdel(&p);
+  p = ft_strnew(10);
+  ft_strcpy(p, "Jordan");
+  ft_putstr(p);
+  ft_strdel(&p);
+  ft_putchar('\n');
   return 0;
 }
