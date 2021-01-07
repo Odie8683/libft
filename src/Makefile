@@ -1,7 +1,7 @@
-CC		=			gcc
-CFLAGS	=		-Wall -Wextra -Werror
-NAME	=		../lib/libft.a
-SRC		=		ft_putchar.c \
+CC		=	gcc
+CFLAGS	=	-Wall -Wextra -Werror
+NAME	=	../lib/libft.a
+SRC		=	ft_putchar.c \
 					ft_putstr.c \
 					ft_memset.c \
 					ft_bzero.c \
@@ -32,9 +32,9 @@ SRC		=		ft_putchar.c \
 					ft_tolower.c \
 					ft_toupper.c
 
-OBJ		=		$(SRC:%.c=%.o)
-RM		=		rm -rf
-AR		=		ar r
+OBJ		=	$(SRC:%.c=%.o)
+RM		=	rm -rf
+AR		=	ar r
 
 $(NAME):	$(OBJ)
 			$(AR) $(NAME) $(OBJ)
