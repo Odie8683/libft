@@ -1,6 +1,6 @@
 CC			=			gcc
 CFLAGS	=		-Wall -Wextra -Werror
-NAME		=		../libft.a
+NAME		=		../lib/libft.a
 SRC		=		ft_putchar.c \
 					ft_putstr.c \
 					ft_memset.c \

@@ -1,5 +1,4 @@
 #include "../include/libft.h"
-#include <stdio.h>
 
 int ft_atoi(const char *str)
 {
@@ -17,7 +16,6 @@ int ft_atoi(const char *str)
 		i++;
 	}
 	unit /= 10;
-	//printf("%d, %d\n",unit, i);
 	i = 0;
 	while (ft_isdigit(str[i])) {
 		nbr = (str[i] - '0') * unit + nbr;
