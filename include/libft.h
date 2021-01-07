@@ -29,5 +29,10 @@ int ft_strncmp(const char *, const char *, size_t);
 int ft_isdigit(int);
 int ft_isalpha(int);
 int ft_atoi(const char *);
+int ft_isalnum(int);
+int ft_isascii(int);
+int ft_isprint(int);
+int ft_toupper(int);
+int ft_tolower(int);
 
 #endif

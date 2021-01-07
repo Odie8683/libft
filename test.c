@@ -60,5 +60,13 @@ int main(void)
   else
   	ft_putstr("il n'y a pas le char demander dans la string\n");
   printf("atoi = %d\n", ft_atoi("1002"));
+  printf("isalnum = %d\n", ft_isalnum('v'));
+  printf("isascii = %d\n", ft_isascii(128));
+  printf("isprint = %d\n", ft_isprint('A'));
+  ft_putchar(ft_toupper('a'));
+  ft_putchar('\n');
+  ft_putchar(ft_tolower('Z'));
+  ft_putchar('\n');
+
   return 0;
 }
