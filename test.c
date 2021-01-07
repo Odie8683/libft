@@ -92,7 +92,7 @@ int main(void)
 		printf("%s\n", tab4[i]);
   free(tab4);
   ft_putendl(ft_itoa(5534));
-  ft_putnbr_fd(255, 1);
+  ft_putnbr_fd(-255, 1);
   ft_putchar('\n');
   return 0;
 }

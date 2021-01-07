@@ -1,5 +1,5 @@
 #include "../include/libft.h"
-
+#include <stdio.h>
 static unsigned int nb_size(int n)
 {
 	unsigned int i;
@@ -19,14 +19,18 @@ static void reverse_str(char *s1, char *s2)
 	int i, j;
 
 	i = 0;
-	j = ft_strlen(s1) - 1;
+	j = ft_strlen(s1);
+
+	if (s1[j - 1] == '-')
+		j -= 1;
+	else
+		j -= 2;
 
 	while (j >= 0) {
 		s2[i] = s1[j];
 		i++;
 		j--;
 	}
-
 	s2[i + 1] = '\0';
 }
 
