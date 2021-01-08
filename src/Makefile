@@ -35,7 +35,10 @@ SRC		=	ft_putchar.c \
 					ft_memdel.c \
 					ft_strnew.c \
 					ft_strdel.c \
-					ft_strclr.c
+					ft_strclr.c \
+					ft_striter.c \
+					ft_striteri.c \
+					ft_strmap.c
 
 OBJ		=	$(SRC:%.c=%.o)
 RM		=	rm -rf

@@ -68,8 +68,7 @@ int main(void)
   ft_putchar(ft_tolower('Z'));
   ft_putchar('\n');
   ft_strdel(&p);
-  p = ft_strnew(10);
-  ft_strcpy(p, "Jordan");
+  p = ft_strmap("jordan", ft_toupper);
   ft_putstr(p);
   ft_strdel(&p);
   ft_putchar('\n');
