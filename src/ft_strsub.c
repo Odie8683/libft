@@ -2,16 +2,17 @@
 
 char *ft_strsub(const char *s, unsigned int start, size_t len)
 {
-	char *buffer;
 	unsigned int i;
+	char *buffer;
 
-	if ((ft_strlen(s) > start) && (ft_strlen(s) < len))
-		return NULL;
-	buffer = ft_strnew(len);
+	buffer = (char *)malloc(sizeof(char) *len + 1);
 	if (!buffer)
 		return NULL;
-	for(i = 0; i < len; i++)
-		buffer[i] += s[start + i];
-	buffer[]
+	if (start > ft_strlen(s) || len > ft_strlen(s))
+		return NULL;
+	for (i = 0; i < len; i++) {
+		buffer[i] = s[start + i];
+	}
+	buffer[i] = '\0';
 	return buffer;
 }

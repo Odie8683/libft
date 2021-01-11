@@ -78,6 +78,13 @@ int main(void)
   else
     ft_putstr(p);
   ft_putchar('\n');
- 
+  ft_strdel(&p);
+  p = ft_strjoin("Nicolas ", "Mpounza");
+  if (!p)
+    ft_putstr("Error Malloc ! ");
+  else
+    ft_putstr(p);
+  ft_putchar('\n');
+
   return 0;
 }
