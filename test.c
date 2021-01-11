@@ -72,5 +72,12 @@ int main(void)
   ft_putstr(p);
   ft_strdel(&p);
   ft_putchar('\n');
+  p = ft_strsub("Foo Bar", 0, 5);
+  if (!p)
+    ft_putstr("Error Malloc ! ");
+  else
+    ft_putstr(p);
+  ft_putchar('\n');
+ 
   return 0;
 }

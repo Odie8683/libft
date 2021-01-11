@@ -42,5 +42,7 @@ void ft_strclr(char *);
 void ft_striter(char *s, void (*)(char *));
 void ft_striteri(char *s, void (*)(unsigned int, char *));
 char *ft_strmap(char const *, char (*)(char));
+char *ft_strmapi(char const *, char (*)(unsigned int, char));
+char *ft_strsub(const char *, unsigned int , size_t);
 
 #endif

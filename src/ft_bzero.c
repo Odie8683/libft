@@ -4,7 +4,7 @@ void ft_bzero(void *s, size_t n)
 {
 	unsigned char *temp;
 
-	temp = s;
+	temp = (unsigned char *)s;
 	while (n) {
 	*(temp + n) = '\0';
 		n--;
