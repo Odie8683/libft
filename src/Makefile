@@ -43,7 +43,8 @@ SRC		=	ft_putchar.c \
 					ft_strequ.c \
 					ft_strnequ.c \
 					ft_strsub.c \
-					ft_strjoin.c
+					ft_strjoin.c \
+					ft_strtrim.c
 
 OBJ		=	$(SRC:%.c=%.o)
 RM		=	rm -rf

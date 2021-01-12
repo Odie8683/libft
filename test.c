@@ -85,6 +85,7 @@ int main(void)
   else
     ft_putstr(p);
   ft_putchar('\n');
+  printf("ft_strtrim =%s\n",ft_strtrim("   Je   suis le rois."));
 
   return 0;
 }

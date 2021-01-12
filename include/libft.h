@@ -45,5 +45,6 @@ char *ft_strmap(char const *, char (*)(char));
 char *ft_strmapi(char const *, char (*)(unsigned int, char));
 char *ft_strsub(const char *, unsigned int , size_t);
 char *ft_strjoin(char const *, char const *);
+char *ft_strtrim(char const *);
 
 #endif
