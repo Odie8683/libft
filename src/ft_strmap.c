@@ -16,5 +16,6 @@ char *ft_strmap(char const *s, char (*f)(char))
       i++;
     }
   }
+  buffer[i] = '\0';
   return buffer;
 }
