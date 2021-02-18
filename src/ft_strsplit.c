@@ -1,34 +1,55 @@
 #include "../include/libft.h"
 
-char **ft_strsplit(char const *s, char c)
+static int nb_word(char *s, char c)
 {
-	unsigned int i;
+	size_t i, j;
+	int words;
 
 	i = 0;
-	i = nb_words(s, c);
-
-	printf("%u\n", i);
-	return NULL;
+	words = 0;
+	while(s[i] != '\0') {
+		j = 0;
+		while (s[i + j] != c)
+			j++;
+		if (j > 0) {
+			words += 1;
+			i += j;
+		}else
+			i++;
+	}
+	return words;
 }
 
-unsigned int nb_words(const char *s, char c)
+char **ft_strsplit(char const *s, char c)
 {
-	unsigned int i;
-	unsigned int j;
-	unsigned int nb;
+	char **tab_str;
+	size_t i, j, k, l;
+	int size;
 
+	size = nb_word((char *)s, c);
+	tab_str = (char **)malloc(sizeof(char *) * (size_t)nb_word);
+	if (!tab_str)
+		return NULL;
 	i = 0;
-	nb = 0;
-	while (s[i]) {
+	l = 0;
+	while (s[i] != '\0') {
 		j = 0;
-		while (s[i] == c)
-			i++;
-		while (s[i + j] != c) {
+		while (s[i + j] != c)
 			j++;
+		if (j == 0) {
+			i++;
+			continue;
 		}
-		if (j > 0)
-			nb++;
-		i += j;
+		tab_str[l] = (char *)malloc(sizeof(char) * j);
+		k = 0;
+		while (s[i + k] != c){
+			tab_str[l][k] = s[i + k];
+			k++;
+		}
+		tab_str[l][k] = '\0';
+		i+= j;
+		l++;
 	}
-	return nb;
+	tab_str[l] = NULL;
+	return tab_str;
 }
