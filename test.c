@@ -86,6 +86,12 @@ int main(void)
     ft_putstr(p);
   ft_putchar('\n');
   printf("ft_strtrim =%s\n",ft_strtrim("   Je   suis le rois."));
-
+  
+  char **tab4 = ft_strsplit("*salut*les***etudiants*", '*');
+  for (int i = 0; i < 3; i++)
+		printf("%s\n", tab4[i]);
+  free(tab4);
+  ft_putendl(ft_itoa(5534));
+  ft_putnbr_fd(255, 1);
   return 0;
 }

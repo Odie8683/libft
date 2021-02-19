@@ -4,6 +4,8 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+/*string function*/
+
 void ft_putchar(char);
 void ft_putstr(const char*);
 void *ft_memset(void*, int, size_t);
@@ -46,5 +48,25 @@ char *ft_strmapi(char const *, char (*)(unsigned int, char));
 char *ft_strsub(const char *, unsigned int , size_t);
 char *ft_strjoin(char const *, char const *);
 char *ft_strtrim(char const *);
+char **ft_strsplit(char const *, char);
+char *ft_itoa(int);
+void ft_putendl(char const *);
+void ft_putnbr(int);
+void ft_putchar_fd(char, int);
+void ft_putendl_fd(char const, int);
+void ft_putnbr_fd(int, int);
+void ft_putnbr_fd(char const *, int);
+
+/*list description*/
+
+typedef struct s_list
+{
+	void *content;
+	size_t content_size;
+	struct s_list *next;
+} t_list;
+
+/*list function*/
+
 
 #endif
