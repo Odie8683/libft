@@ -1,6 +1,6 @@
 #include "../include/libft.h"
 
-void ft_putnbr_fd(char const *s, int fd)
+void ft_putstr_fd(char const *s, int fd)
 {
 	unsigned int i;
 

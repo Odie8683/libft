@@ -53,9 +53,9 @@ char *ft_itoa(int);
 void ft_putendl(char const *);
 void ft_putnbr(int);
 void ft_putchar_fd(char, int);
-void ft_putendl_fd(char const, int);
+void ft_putendl_fd(char const *, int);
 void ft_putnbr_fd(int, int);
-void ft_putnbr_fd(char const *, int);
+void ft_putstr_fd(char const *, int);
 
 /*list description*/
 

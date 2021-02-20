@@ -27,7 +27,7 @@ char **ft_strsplit(char const *s, char c)
 	int size;
 
 	size = nb_word((char *)s, c);
-	tab_str = (char **)malloc(sizeof(char *) * (size_t)nb_word);
+	tab_str = (char **)malloc(sizeof(char *) * (size_t)size);
 	if (!tab_str)
 		return NULL;
 	i = 0;
