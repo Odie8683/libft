@@ -1,5 +1,5 @@
 #include "../include/libft.h"
-#include <stdio.h>
+
 static unsigned int nb_size(int n)
 {
 	unsigned int i;

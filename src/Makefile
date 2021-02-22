@@ -54,7 +54,10 @@ SRC		=	ft_putchar.c \
 					ft_putendl_fd.c \
 					ft_putnbr_fd.c \
 					ft_lstnew.c \
-					ft_lstadd.c
+					ft_lstadd.c \
+					ft_lstdelone.c \
+					ft_lstdel.c \
+					ft_lstiter.c
 
 OBJ		=	$(SRC:%.c=%.o)
 RM		=	rm -rf
