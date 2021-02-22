@@ -68,5 +68,7 @@ typedef struct s_list
 
 /*list function*/
 
+t_list *ft_lstnew(void const *, size_t);
+void ft_lstadd(t_list **, t_list *);
 
 #endif
