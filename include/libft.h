@@ -72,6 +72,7 @@ t_list *ft_lstnew(void const *, size_t);
 void ft_lstadd(t_list **, t_list *);
 void ft_lstdelone(t_list **, void (*del)(void *, size_t));
 void ft_lstdel(t_list **, void (*del)(void *, size_t));
+t_list *ft_lstmap(t_list *, t_list *(*f)(t_list *));
 
 
 #endif
