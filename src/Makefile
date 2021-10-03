@@ -58,7 +58,8 @@ SRC		=	ft_putchar.c \
 					ft_lstdelone.c \
 					ft_lstdel.c \
 					ft_lstiter.c \
-					ft_lstmap.c
+					ft_lstmap.c \
+					get_next_line.c
 
 OBJ		=	$(SRC:%.c=%.o)
 RM		=	rm -rf
